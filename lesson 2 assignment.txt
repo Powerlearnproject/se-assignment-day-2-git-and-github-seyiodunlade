@@ -1,0 +1,59 @@
+1. Version control is a process in software engineering for tracking changes to a file. It involves viewing the updates made to a file and seeing the different times at which changes were made to the file.
+
+- GitHub is a tool that utilizes git for version control and collaboration. 
+
+- With version control, one can view all the different stages changes were made to a file and can easily revert to a certain stage. Also, when collaborating with other developers branches can be created to ensure the production code isn't tampered with.
+
+2. To set up a new repository on GitHub, the following steps must be done.
+  i.   Sign into GitHub using your username/email and password.
+  ii.  Click on new to create a new repository.
+  iii. Enter the name of the repository.
+  iv.  Select the privacy of the repository (either public or private)
+   v.  A readme file (a description of the project) can be added as well as a .gitignore file.
+   vi. The license can be left in the default setting then click on create repository to create the repository.
+
+3. The README file in a GitHub repository is important as it contains the description of the project. The README file also provides insights on the folder structure of the project, installation instructions, guidance and information on how to contribute to the project. The following should be included in your README:
+ - Project title
+ - Project Description
+ - Table of contents (this is not mandatory)
+ - How to install and run the project
+ - How to use the project
+ - Include the credits (references or collaborators on the project)
+ - Tests for the project.
+ - How to contribute to the project
+
+ A README file makes collaboration easy because it provides guidelines on how to contribute to a project as well as the necessary software tools or programming languages (or packages) required.
+
+4. A public repository is one that is accessible to the entire public. Anyone with a link to such repository can view the contents of the repository and make use of the repository/clone the repository. A private repository is one that is accessible only to the creator of the repo and the people the creator has granted access to. Public repositories are usually used for educational purposes or projects that are not to be monetized.
+ADVANTAGES: With a public repository, one can easily share his project to anyone to collaborate. It promotes the idea of open source projects. As for private repositories, they are very useful especially if the content is to be monetized or if the information is highly sensitive (i.e. it belongs to an organization). Private repositories allows enables confidentiality and controlled collaboration. 
+
+DISADVANTAGES: Public repositories are at the risk of data breach and confidentiality which can lead to loss of trust. Collaboration in public repositories is not controlled. Private repositories stifles the idea of open source projects. Also, as the number of collaborators grow it may become hard to manage.
+
+5. WHAT ARE COMMITS? Commits are specific snapshots or points at which changes were made to a file or a group of files in a repository. Commits are often included with descriptive messages that explain the reason for the changes made. With commits, collaborators can easily rollback to a previous state which is very useful in the case mistakes have been made. 
+
+STEPS INVOLVED IN MAKING MY FIRST COMMIT
+i.  Initialize a git repository in my working directory by using the command "git init".
+ii. The files in my working directory are added to the staging area by using the command "git add .". This can be verified by using the command "git status" to ensure all the files are now being tracked.
+iii. The commit is then done by using the command "git commit -m 'description of the commit'".
+
+6. A branch is a different version of the main repository. Branching are usually used when a new feature is to be added or when a bug is to be fixed. Branches can also be used by different collaborators on a project to track the progress by each person. They are used to ensure no un-necessary changes are made to the main branch during the development process. 
+
+	Branches are created in git by using the process outlined below
+
+i. Create a new branch using the command "git branch name-of-branch". We can check if this branch has been created by using the "git branch" command.
+ii. The main branch can be switched to the new branch by using the "git checkout branch-name" command.
+iii. After we have made all the necessary changes we need in this branch, we can merge it to the master branch. Also, note to run git add. and git commit to commit all the changes on the new branch.
+iv. We need to checkout to the master branch by using the command "git checkout branch-name". 
+v. Then run the command "git merge branch-name-to-be-merged".
+
+7. Pull requests are typically used when new features are to be added to a project. It involves a developer making a request for a branch in his repository to be merged to the master branch. A pull request is typically reviewed for conflicts and correctness before being accepted. To make a pull request, a developer clones the original repository. Once he/she has concluded the task (with the necessary commits made). A pull request is made which is sent for review before it can be accepted/merged.
+
+8. Forking refers to making a copy of a repository on a remote server (e.g. GitHub). Cloning involves making a copy of a project locally. Also, the copy made through cloning is not independent of the master branch. Whereas changes can be made in a forked repo without the original repository been affected.
+
+9. Issues and project boards are very important as they assist in visualizing and keeping track of individual tasks, bugs and feature development.
+
+10. The common challenges faced while working on gihub include:
+ i. Editing a commit message: The --amend command can be used to edit the description of a commit.
+ii. Forgetting to stage a file before committing: The --amend command can also be used in this regard.
+iii. Undoing a local commit. Sometimes commits may be ran in error and in order for the errors to be fixed, the commit needs to be rolled back. The reset command can be used.
+
